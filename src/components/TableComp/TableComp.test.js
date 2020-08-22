@@ -1,8 +1,15 @@
 import React from "react";
 import TableComp from "./TableComp";
-import { render } from '@testing-library/react'
+import { render } from "@testing-library/react";
 
-// test to make sure the table renders
-test("loads and displays table", async () => {
-	render(<TableComp />);
+describe("TableComp", () => {
+	// test to make sure the table renders
+	test("renders table header", async () => {
+		render("<thead></thead>");
+	});
+
+	// test to make sure the table renders
+	test("renders table body", async () => {
+		render("<tbody></tbody>");
+	});
 });
