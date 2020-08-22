@@ -1,0 +1,9 @@
+.center-align {
+	display: flex;
+	justify-content: center;
+}
+
+.background {
+	background-color: navy;
+	border-bottom: rgb(196, 13, 13) solid 7px;
+}
