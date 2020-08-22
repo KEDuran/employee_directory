@@ -12,4 +12,12 @@ describe("TableComp", () => {
 	test("renders table body", async () => {
 		render("<tbody></tbody>");
 	});
+
+	// checks for the existence of a JSON file
+	test("checking that data from employee.json populates", async () => {
+		// Arrange
+		const { container, debug } = render(<TableComp name="John" />);
+		// Act & Assert
+		expect(container).toContainHTML("<td>John</td>");
+	});
 });
