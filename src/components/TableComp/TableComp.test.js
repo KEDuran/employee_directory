@@ -1,8 +1,9 @@
 import React from "react";
 import TableComp from "./TableComp";
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import axios from "axios";
-import userEvent from "@testing-library/user-event";
+
+import { MDBDataTable } from "mdbreact";
 // import jest from "jest";
 
 jest.mock("axios");
@@ -21,15 +22,17 @@ describe("TableComp", () => {
 	test("fetches data from an API", async () => {
 		// creates a mock employee JSON object
 		const employees = {
-			results: [
-				{
-					picture: { thumbnail: "a" },
-					name: { first: "k", last: "j" },
-					phone: "123",
-					email: "test@test.com",
-					dob: { date: "1972-01-15" },
-				},
-			],
+			data: {
+				results: [
+					{
+						picture: { thumbnail: "a" },
+						name: { first: "k", last: "j" },
+						phone: "123",
+						email: "test@test.com",
+						dob: { date: "1972-01-15" },
+					},
+				],
+			},
 		};
 		// binds the axios calls to the employees JSON object
 		axios.get.mockImplementationOnce(() => Promise.resolve(employees));
@@ -40,8 +43,35 @@ describe("TableComp", () => {
 			`https://randomuser.me/api/?results=200&nat=us`
 		);
 	});
-	// test for table sorting feature
-	test("click sorting carrot to sort table data", () => {
-		render(<TableComp sorting={true} />);
+	// test to make sure MDB table renders
+	test("render MDB table", () => {
+		var data = {
+			columns: [
+				{
+					label: "Name",
+					field: "name",
+					sort: "asc",
+					width: 150,
+				},
+				{
+					label: "Position",
+					field: "position",
+					sort: "asc",
+					width: 270,
+				},
+			],
+			rows: [
+				{
+					name: "Tiger Nixon",
+					position: "System Architect",
+				},
+				{
+					name: "Garrett Winters",
+					position: "Accountant",
+				},
+			],
+		};
+
+		render(<MDBDataTable data={data} sorting="true" />);
 	});
 });
