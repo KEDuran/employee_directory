@@ -6,6 +6,9 @@ import axios from "axios";
 class TableComp extends Component {
 	constructor() {
 		super();
+		this.state = {
+			employees: [],
+		};
 	}
 
 	uponRefresh = async () => {
@@ -13,7 +16,11 @@ class TableComp extends Component {
 
 		await axios
 			.get(url)
-			.then(function (res) {})
+			.then((res) => {
+				this.setState({
+					employees: res.data.results,
+				});
+			})
 			.catch(function (error) {
 				console.log(error);
 			});
