@@ -2,6 +2,7 @@ import React from "react";
 import TableComp from "./TableComp";
 import { render } from "@testing-library/react";
 import axios from "axios";
+import userEvent from "@testing-library/user-event";
 // import jest from "jest";
 
 jest.mock("axios");
