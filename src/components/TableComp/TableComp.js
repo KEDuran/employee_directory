@@ -45,13 +45,17 @@ class TableComp extends Component {
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>Table cell</td>
-								<td>Table cell</td>
-								<td>Table cell</td>
-								<td>Table cell</td>
-								<td>Table cell</td>
-							</tr>
+							{this.state.employees.map((employee, i) => (
+								<tr key={i}>
+									<td>
+										<img src={employee.picture.thumbnail}></img>
+									</td>
+									<td>{`${employee.name.first} ${employee.name.last}`}</td>
+									<td>{employee.phone}</td>
+									<td>{employee.email}</td>
+									<td>{employee.dob.date}</td>
+								</tr>
+							))}
 						</tbody>
 					</Table>
 				</Row>
