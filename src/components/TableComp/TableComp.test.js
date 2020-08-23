@@ -10,14 +10,15 @@ jest.mock("axios");
 
 describe("TableComp", () => {
 	// test to make sure the table renders
-	test("renders table header", async () => {
-		render("<thead></thead>");
-	});
+	// test("renders table header", async () => {
+	// 	render("<thead></thead>");
+	// });
 
 	// test to make sure the table renders
-	test("renders table body", async () => {
-		render("<tbody></tbody>");
-	});
+	// test("renders table body", async () => {
+	// 	render("<tbody></tbody>");
+	// });
+
 	// test to make sure data is calling from API
 	test("fetches data from an API", async () => {
 		// creates a mock employee JSON object
