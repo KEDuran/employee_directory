@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Container, Row, Table } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import axios from "axios";
+import { MDBDataTable } from "mdbreact";
 
 // function to call API data for TableComp
 class TableComp extends Component {
@@ -8,12 +9,44 @@ class TableComp extends Component {
 		super();
 		this.state = {
 			employees: [],
+			columns: [
+				{
+					label: "Image",
+					field: "image",
+					sort: "asc",
+					width: 150,
+				},
+				{
+					label: "Name",
+					field: "name",
+					sort: "asc",
+					width: 200,
+				},
+				{
+					label: "Phone",
+					field: "phone",
+					sort: "asc",
+					width: 200,
+				},
+				{
+					label: "Email",
+					field: "email",
+					sort: "asc",
+					width: 200,
+				},
+				{
+					label: "DOB",
+					field: "dob",
+					sort: "asc",
+					width: 200,
+				},
+			],
 		};
 	}
 
 	formatDate(dateString) {
 		var date = new Date(dateString);
-		return `${date.getMonth()+1} / ${date.getDate()} / ${date.getFullYear()}`;
+		return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
 	}
 
 	uponRefresh = async () => {
@@ -22,8 +55,19 @@ class TableComp extends Component {
 		await axios
 			.get(url)
 			.then((res) => {
+				var employeeData = [];
+				for (var i = 0; i < res.data.results.length; i++) {
+					var singleEmployee = {
+						image: [<img src={res.data.results[i].picture.thumbnail} alt="" />],
+						name: `${res.data.results[i].name.first} ${res.data.results[i].name.last}`,
+						phone: res.data.results[i].phone,
+						email: res.data.results[i].email,
+						dob: this.formatDate(res.data.results[i].dob.date),
+					};
+					employeeData.push(singleEmployee);
+				}
 				this.setState({
-					employees: res.data.results,
+					employees: employeeData,
 				});
 			})
 			.catch(function (error) {
@@ -38,32 +82,10 @@ class TableComp extends Component {
 	render() {
 		return (
 			<Container>
-				<Row>
-					<Table>
-						<thead>
-							<tr>
-								<th>Image</th>
-								<th>Name</th>
-								<th>Phone</th>
-								<th>Email</th>
-								<th>DOB</th>
-							</tr>
-						</thead>
-						<tbody>
-							{this.state.employees.map((employee, i) => (
-								<tr key={i}>
-									<td>
-										<img src={employee.picture.thumbnail}></img>
-									</td>
-									<td>{`${employee.name.first} ${employee.name.last}`}</td>
-									<td>{employee.phone}</td>
-									<td>{employee.email}</td>
-									<td>{this.formatDate(employee.dob.date)}</td>
-								</tr>
-							))}
-						</tbody>
-					</Table>
-				</Row>
+				<MDBDataTable
+					data={{ columns: this.state.columns, rows: this.state.employees }}
+					sorting="true"
+				/>
 			</Container>
 		);
 	}
