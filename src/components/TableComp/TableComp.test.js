@@ -1,6 +1,6 @@
 import React from "react";
 import TableComp from "./TableComp";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import axios from "axios";
 import userEvent from "@testing-library/user-event";
 // import jest from "jest";
@@ -39,5 +39,9 @@ describe("TableComp", () => {
 		expect(axios.get).toHaveBeenCalledWith(
 			`https://randomuser.me/api/?results=200&nat=us`
 		);
+	});
+	// test for table sorting feature
+	test("click sorting carrot to sort table data", () => {
+		render(<TableComp sorting={true} />);
 	});
 });
