@@ -11,6 +11,11 @@ class TableComp extends Component {
 		};
 	}
 
+	formatDate(dateString) {
+		var date = new Date(dateString);
+		return `${date.getMonth()+1} / ${date.getDate()} / ${date.getFullYear()}`;
+	}
+
 	uponRefresh = async () => {
 		var url = `https://randomuser.me/api/?results=200&nat=us`;
 
@@ -53,7 +58,7 @@ class TableComp extends Component {
 									<td>{`${employee.name.first} ${employee.name.last}`}</td>
 									<td>{employee.phone}</td>
 									<td>{employee.email}</td>
-									<td>{employee.dob.date}</td>
+									<td>{this.formatDate(employee.dob.date)}</td>
 								</tr>
 							))}
 						</tbody>
