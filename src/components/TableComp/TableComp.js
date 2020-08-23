@@ -13,7 +13,7 @@ class TableComp extends Component {
 
 	formatDate(dateString) {
 		var date = new Date(dateString);
-		return `${date.getMonth()+1} / ${date.getDate()} / ${date.getFullYear()}`;
+		return `${date.getMonth() + 1} / ${date.getDate()} / ${date.getFullYear()}`;
 	}
 
 	uponRefresh = async () => {
@@ -53,7 +53,7 @@ class TableComp extends Component {
 							{this.state.employees.map((employee, i) => (
 								<tr key={i}>
 									<td>
-										<img src={employee.picture.thumbnail}></img>
+										<img src={employee.picture.thumbnail} alt="employee"></img>
 									</td>
 									<td>{`${employee.name.first} ${employee.name.last}`}</td>
 									<td>{employee.phone}</td>
