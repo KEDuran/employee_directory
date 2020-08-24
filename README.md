@@ -21,7 +21,9 @@
 
 For this assignment, students were tasked with creating a employee directory web application with React. In using React, this web application was designed creating UI components, managing component state, and able to respond to user events.
 
-In additional to using React, I took the opporunity to incorporate _unit testing_ for certain functionality used to develop this application. Please reference the _Testing_ section in this readme.
+### FYI
+* To practice test driven development (TDD), I took the opporunity to incorporate _unit testing_ for certain functionality used to develop this application. Please reference the _Testing_ section in this readme for more details.
+* To incorporate continuous integration and continuous deployment (CICD), I also connected this assignment repo to [CircleCI](https://circleci.com/) and [CodeClimate](https://codeclimate.com/) in order to help monitor the testing results and code quality.
 
 ---
 
