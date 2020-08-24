@@ -25,7 +25,7 @@ In additional to using React, I took the opporunity to incorporate _unit testing
 
 ---
 
-## Links to Submission Items
+## Links for Submission Items
 
 Link to GitHub Repo - [Employee Directory GitHub Repo](https://github.com/KEDuran/employee_directory)
 
@@ -62,7 +62,7 @@ For this assignment, the user should be able to conduct the following functional
 
 In order to success launch this web application, you will need to have the following installed in your local working environment:
 
-- **Node.js** - Make sure Node.js is installed in your machine. If Node.js is not installed on your machine, click here to download the application.
+- **Node.js** - Make sure Node.js is installed in your machine. If Node.js is not installed on your machine, [click here](https://nodejs.org/en/) to download the application.
 
 ### Installation Instructions
 
