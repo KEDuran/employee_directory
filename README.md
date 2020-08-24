@@ -11,7 +11,7 @@
 
 For this assignment, students were tasked with creating a employee directory web application with React. In using React, this web application was designed creating UI components, managing component state, and able to respond to user events.
 
-In additional to using React, I took the opporunity to incorporate unit testing for certain functionality used to develop this application. Please reference the _Testing_ section in this readme.
+In additional to using React, I took the opporunity to incorporate _unit testing_ for certain functionality used to develop this application. Please reference the _Testing_ section in this readme.
 
 ---
 
@@ -25,6 +25,10 @@ In additional to using React, I took the opporunity to incorporate unit testing 
 ---
 
 ## Links to Submission Items
+
+Link to GitHub Repo - [https://github.com/KEDuran/employee_directory](https://github.com/KEDuran/employee_directory)
+
+Link to deployed application - [https://employee-directory-ked.herokuapp.com/](https://employee-directory-ked.herokuapp.com/)
 
 ---
 
