@@ -7,20 +7,21 @@
 
 ---
 
+## Table of Contents
+
+- [Description](#description)
+- [Links for Submission Items](#links-for-submission-items)
+- [Assignment Scope](#assignment-scope)
+- [Installation and Testing](#installation-and-testing)
+- [Final Output](#final-output)
+
+---
+
 ## Description
 
 For this assignment, students were tasked with creating a employee directory web application with React. In using React, this web application was designed creating UI components, managing component state, and able to respond to user events.
 
 In additional to using React, I took the opporunity to incorporate _unit testing_ for certain functionality used to develop this application. Please reference the _Testing_ section in this readme.
-
----
-
-## Table of Contents
-
-- [Links for Submission Items](#links-for-submission-items)
-- [Assignment Scope](#assignment-scope)
-- [Installation and Testing](#installation-and-testing)
-- [Final Output](#final-output)
 
 ---
 
@@ -67,7 +68,7 @@ All NPM packages needed for this application are already listed as dependencies 
 
 ### Start Application
 
-After all required dependencies have been installed using the instructions in the _Installation Instructions_ section, run the command `npm start` in you the terminal under the root directory in order to launch the application. The screenshot provided below is what should outplu of the application is launched successfully in your local environment.
+After all required dependencies have been installed using the instructions in the _Installation Instructions_ section, run the command `npm start` in you the terminal under the root directory in order to launch the application.
 
 ### Testing
 
@@ -80,3 +81,7 @@ There are two test suites (one suite per component) and four individual unit tes
 ---
 
 ## Final Output
+
+I have included a brief demo recording to show the applications functionality and responsiveness to difference mobile device sizes. The web application's deployed link on Heroku is the source link for this recording.
+
+Link to Demo Recording - [Link to Demo Recording](https://drive.google.com/file/d/1puFGZR_oq1ZtZh1j3uAdQW78V1MDF0qe/view?usp=sharing)
