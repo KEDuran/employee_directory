@@ -31,6 +31,8 @@ Link to GitHub Repo - [https://github.com/KEDuran/employee_directory](https://gi
 
 Link to deployed application - [https://employee-directory-ked.herokuapp.com/](https://employee-directory-ked.herokuapp.com/)
 
+Link to Demo Recording - [Link to Demo Recording](https://drive.google.com/file/d/1puFGZR_oq1ZtZh1j3uAdQW78V1MDF0qe/view?usp=sharing)
+
 ---
 
 ## Assignment Scope
@@ -82,6 +84,6 @@ There are two test suites (one suite per component) and four individual unit tes
 
 ## Final Output
 
-I have included a brief demo recording to show the applications functionality and responsiveness to difference mobile device sizes. The web application's deployed link on Heroku is the source link for this recording.
+I have included a brief demo recording to show the employee directory web application functionality and responsiveness. The web application's deployed link on Heroku is the source URL for this recording.
 
 Link to Demo Recording - [Link to Demo Recording](https://drive.google.com/file/d/1puFGZR_oq1ZtZh1j3uAdQW78V1MDF0qe/view?usp=sharing)
