@@ -17,6 +17,11 @@ In additional to using React, I took the opporunity to incorporate unit testing 
 
 ## Table of Contents
 
+- [Links for Submission Items](#links-for-submission-items)
+- [Assignment Scope](#assignment-scope)
+- [Installation and Testing](#installation-and-testing)
+- [Final Output](#final-output)
+
 ---
 
 ## Links to Submission Items
@@ -30,7 +35,8 @@ In additional to using React, I took the opporunity to incorporate unit testing 
 The user story provided below was included in this homework assignment's instructions.
 
 ```
-As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+As a user, I want to be able to view my entire employee directory at once so
+that I have quick access to their information.
 ```
 
 ### Acceptance Criteria
