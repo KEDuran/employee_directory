@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container } from "react-bootstrap";
 import axios from "axios";
 import { MDBDataTable } from "mdbreact";
+import "./style.css";
 
 // function to call API data for TableComp
 class TableComp extends Component {
@@ -81,12 +82,10 @@ class TableComp extends Component {
 
 	render() {
 		return (
-			<Container>
-				<MDBDataTable
-					data={{ columns: this.state.columns, rows: this.state.employees }}
-					sorting="true"
-				/>
-			</Container>
+			<MDBDataTable
+				data={{ columns: this.state.columns, rows: this.state.employees }}
+				sorting="true"
+			/>
 		);
 	}
 }
