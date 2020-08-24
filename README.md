@@ -3,4 +3,36 @@
 ![GitHub followers](https://img.shields.io/github/followers/KEDuran?logo=GitHub&style=plastic)
 ![GitHub language count](https://img.shields.io/github/languages/count/KEDuran/employee_directory?color=orange&logo=GitHub&style=plastic)
 ![react](https://img.shields.io/badge/library-react.js-purple/?style=plastic&logo=react)
-![npm](https://img.shields.io/npm/v/axios?color=purple&label=axios&logo=NPM)
+![npm](https://img.shields.io/npm/v/axios?color=purple&label=axios&logo=NPM&style=plastic)
+
+---
+
+## Description
+
+---
+
+## Table of Contents
+
+---
+
+## Links to Submission Items
+
+---
+
+## Assignment Scope
+
+### User Story
+
+### Acceptance Criteria
+
+---
+
+## Installation and Testing
+
+### Installation
+
+### Testing
+
+---
+
+## Final Output
