@@ -55,9 +55,27 @@ For this assignment, the user should be able to conduct the following functional
 
 ## Installation and Testing
 
-### Installation
+### Required Technology
+
+In order to success launch this web application, you will need to have the following installed in your local working environment:
+
+- **Node.js** - Make sure Node.js is installed in your machine. If Node.js is not installed on your machine, click here to download the application.
+
+### Installation Instructions
+
+All NPM packages needed for this application are already listed as dependencies in the `package.json` file. If running this web application in your local environment, please make sure to run the `npm install`command in your terminal at the root directory level in order to access all required package.
+
+### Start Application
+
+After all required dependencies have been installed using the instructions in the _Installation Instructions_ section, run the command `npm start` in you the terminal under the root directory in order to launch the application. The screenshot provided below is what should outplu of the application is launched successfully in your local environment.
 
 ### Testing
+
+When checking to see if all applicable unit tests pass throughout the development of this application, make sure to run the `npm test` command in your terminal each time you would like to test the application.
+
+There are two test suites (one suite per component) and four individual unit tests (two unit tests per component) included within this application. All incorporated unit tests pass - as demonstrated in the terminal screenshot below.
+
+![Unit Test Pass](./image/unitTestsPass.png)
 
 ---
 
