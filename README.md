@@ -27,9 +27,9 @@ In additional to using React, I took the opporunity to incorporate _unit testing
 
 ## Links to Submission Items
 
-Link to GitHub Repo - [https://github.com/KEDuran/employee_directory](https://github.com/KEDuran/employee_directory)
+Link to GitHub Repo - [Employee Directory GitHub Repo](https://github.com/KEDuran/employee_directory)
 
-Link to deployed application - [https://employee-directory-ked.herokuapp.com/](https://employee-directory-ked.herokuapp.com/)
+Link to deployed application - [Employee Directory Web Application on Heroku](https://employee-directory-ked.herokuapp.com/)
 
 Link to Demo Recording - [Link to Demo Recording](https://drive.google.com/file/d/1puFGZR_oq1ZtZh1j3uAdQW78V1MDF0qe/view?usp=sharing)
 
